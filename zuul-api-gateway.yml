@@ -1,0 +1,20 @@
+spring:
+  application:
+          name: zuul-api-gateway
+
+eureka:
+  client:
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+  instance:
+    nonSecurePort: 80
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:   info, health, refresh

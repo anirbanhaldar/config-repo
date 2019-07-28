@@ -18,3 +18,23 @@ management:
     web:
       exposure:
         include:   info, health, refresh
+        
+zuul:
+  host:
+    socket-timeout-millis: 120000
+    connect-timeout-millis: 120000
+    connection-request-timeout-millis: 120000
+
+ribbon:
+  ConnectTimeout: 120000
+  ReadTimeout: 120000
+  
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 240000 
+        timeout:
+          enabled: false

@@ -38,3 +38,6 @@ hystrix:
             timeoutInMilliseconds: 240000 
         timeout:
           enabled: false
+          
+sample-efs-inservice: true
+sample-employee-microservice-healthcheck-url: http://localhost:8090/actuator/health

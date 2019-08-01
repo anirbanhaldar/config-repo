@@ -50,7 +50,8 @@ management:
 poc:
  rabbitmq:
      exchange: deloitte.exchange
-     queue: deloitte.routingKey
+     queue: deloitte.queue
+     routingkey: deloitte.routingKey
     
      
 logging:

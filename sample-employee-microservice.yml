@@ -47,6 +47,10 @@ management:
 #todo: make sure to always enable security in production
 
 
+poc:
+ rabbitmq:
+     exchange: deloitte.exchange
+     queue: deloitte.routingKey
     
      
 logging:
